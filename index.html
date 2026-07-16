@@ -248,20 +248,7 @@
   .section-head p{ margin-top:18px; color:var(--bone-dim); font-size:18px; font-weight:500; line-height:1.8; }
 
   /* ---------- ABOUT ---------- */
-  .about-grid{
-    display:grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap:70px;
-    align-items:stretch;
-  }
-  .about-visual{
-    position:relative;
-    min-height:480px;
-    background:var(--panel);
-    border:1px solid var(--line);
-    overflow:hidden;
-  }
-  .about-visual svg{ width:100%; height:100%; }
+  .about-copy{ max-width:840px; }
   .about-copy p{ color:var(--bone-dim); font-size:17px; font-weight:500; line-height:1.9; margin-bottom:16px; }
   .about-copy strong{ color:var(--bone); font-weight:700; }
 
@@ -620,8 +607,7 @@
   @media (max-width: 900px){
     nav.links{ display:none; }
     .section{ padding:110px 0; }
-    .about-grid, .contact-grid{ grid-template-columns:1fr; }
-    .about-visual{ min-height:0; aspect-ratio:16/9; }
+    .contact-grid{ grid-template-columns:1fr; }
     .biz-row{ grid-template-columns:1fr; gap:18px; }
     .kit-feature-grid{ grid-template-columns:repeat(2,1fr); }
     .kit-photo-row{ grid-template-columns:repeat(2,1fr); }
@@ -724,114 +710,37 @@
       <h2>우리는 누구인가</h2>
     </div>
 
-    <div class="about-grid">
-      <div class="about-visual reveal">
-        <svg viewBox="0 0 400 560" preserveAspectRatio="xMidYMid slice">
-          <defs>
-            <linearGradient id="avg" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#1c1c21"/>
-              <stop offset="100%" stop-color="#0a0a0c"/>
-            </linearGradient>
-          </defs>
-          <rect width="400" height="560" fill="url(#avg)"/>
+    <div class="about-copy reveal">
+      <p>Project Bee는 <strong>드론 기술을 기반으로 교육과 문화를 연결하는 프로젝트 기업</strong>입니다.</p>
+      <p>우리는 기술을 개발하는 것에서 끝나지 않습니다. 그 기술이 교육이 되고, 문화가 되고, 사람들의 새로운 경험이 되는 드론 프로젝트를 만들어갑니다.</p>
 
-          <g stroke="rgba(237,234,226,0.14)" stroke-width="1">
-            <line x1="34" y1="20" x2="46" y2="20"/>
-            <line x1="354" y1="20" x2="366" y2="20"/>
-            <line x1="34" y1="50" x2="46" y2="50"/>
-            <line x1="354" y1="50" x2="366" y2="50"/>
-            <line x1="34" y1="80" x2="46" y2="80"/>
-            <line x1="354" y1="80" x2="366" y2="80"/>
-            <line x1="34" y1="110" x2="46" y2="110"/>
-            <line x1="354" y1="110" x2="366" y2="110"/>
-            <line x1="34" y1="140" x2="46" y2="140"/>
-            <line x1="354" y1="140" x2="366" y2="140"/>
-            <line x1="34" y1="170" x2="46" y2="170"/>
-            <line x1="354" y1="170" x2="366" y2="170"/>
-            <line x1="34" y1="200" x2="46" y2="200"/>
-            <line x1="354" y1="200" x2="366" y2="200"/>
-            <line x1="34" y1="230" x2="46" y2="230"/>
-            <line x1="354" y1="230" x2="366" y2="230"/>
-            <line x1="34" y1="260" x2="46" y2="260"/>
-            <line x1="354" y1="260" x2="366" y2="260"/>
-            <line x1="34" y1="290" x2="46" y2="290"/>
-            <line x1="354" y1="290" x2="366" y2="290"/>
-            <line x1="34" y1="320" x2="46" y2="320"/>
-            <line x1="354" y1="320" x2="366" y2="320"/>
-            <line x1="34" y1="350" x2="46" y2="350"/>
-            <line x1="354" y1="350" x2="366" y2="350"/>
-            <line x1="34" y1="380" x2="46" y2="380"/>
-            <line x1="354" y1="380" x2="366" y2="380"/>
-            <line x1="34" y1="410" x2="46" y2="410"/>
-            <line x1="354" y1="410" x2="366" y2="410"/>
-            <line x1="34" y1="440" x2="46" y2="440"/>
-            <line x1="354" y1="440" x2="366" y2="440"/>
-            <line x1="34" y1="470" x2="46" y2="470"/>
-            <line x1="354" y1="470" x2="366" y2="470"/>
-            <line x1="34" y1="500" x2="46" y2="500"/>
-            <line x1="354" y1="500" x2="366" y2="500"/>
-            <line x1="34" y1="530" x2="46" y2="530"/>
-            <line x1="354" y1="530" x2="366" y2="530"/>
-          </g>
-
-          <g stroke="rgba(237,234,226,0.18)" stroke-width="1">
-            <line x1="50" y1="60" x2="350" y2="60"/>
-            <line x1="50" y1="500" x2="350" y2="500"/>
-          </g>
-          <text x="200" y="42" fill="#84828b" font-family="IBM Plex Mono" font-size="11" letter-spacing="2" text-anchor="middle">DRONE EDUCATION KIT — REV.03</text>
-          <text x="200" y="522" fill="#84828b" font-family="IBM Plex Mono" font-size="11" letter-spacing="2" text-anchor="middle">PROJECT BEE R&amp;D</text>
-
-          <g stroke="rgba(237,234,226,0.16)" stroke-width="1" fill="none">
-            <polygon points="200,140 224,155 224,185 200,200 176,185 176,155"/>
-            <polygon points="200,360 224,375 224,405 200,420 176,405 176,375"/>
-          </g>
-
-          <g stroke="rgba(243,167,18,0.35)" stroke-width="1" fill="none">
-            <polygon points="200,220 250,250 250,310 200,340 150,310 150,250"/>
-          </g>
-          <circle cx="200" cy="280" r="6" fill="#f3a712"/>
-
-          <g stroke="rgba(255,207,92,0.4)" stroke-width="1">
-            <line x1="150" y1="280" x2="90" y2="280"/>
-            <line x1="250" y1="280" x2="310" y2="280"/>
-            <circle cx="90" cy="280" r="16" fill="none"/>
-            <circle cx="310" cy="280" r="16" fill="none"/>
-          </g>
-        </svg>
+      <div class="mv-grid">
+        <div class="mv-card">
+          <div class="mv-label">미션</div>
+          <p>창의적인 아이디어를 실현 가능한 드론 프로젝트로 만든다.</p>
+        </div>
+        <div class="mv-card">
+          <div class="mv-label">비전</div>
+          <p>교육과 기술, 문화가 연결되는 새로운 드론 생태계를 만든다.</p>
+        </div>
       </div>
 
-      <div class="about-copy reveal">
-        <p>Project Bee는 <strong>드론 기술을 기반으로 교육과 문화를 연결하는 프로젝트 기업</strong>입니다.</p>
-        <p>우리는 기술을 개발하는 것에서 끝나지 않습니다. 그 기술이 교육이 되고, 문화가 되고, 사람들의 새로운 경험이 되는 드론 프로젝트를 만들어갑니다.</p>
-
-        <div class="mv-grid">
-          <div class="mv-card">
-            <div class="mv-label">미션</div>
-            <p>창의적인 아이디어를 실현 가능한 드론 프로젝트로 만든다.</p>
-          </div>
-          <div class="mv-card">
-            <div class="mv-label">비전</div>
-            <p>교육과 기술, 문화가 연결되는 새로운 드론 생태계를 만든다.</p>
-          </div>
+      <div class="founder-block">
+        <div class="founder-head">
+          <h4>대표 배지원</h4>
+          <span class="founder-role">대표 · 수석 강사</span>
         </div>
-
-        <div class="founder-block">
-          <div class="founder-head">
-            <h4>대표 배지원</h4>
-            <span class="founder-role">대표 · 수석 강사</span>
-          </div>
-          <p>Project Bee는 무인멀티콥터 지도조종자 자격을 보유한 대표가 기체 개발부터 커리큘럼 설계, 현장 강의까지 직접 담당합니다. 기술과 교육 현장을 모두 이해하는 팀이라는 점이 Project Bee의 가장 큰 신뢰 기반입니다.</p>
-          <div class="cert-label">보유 자격증</div>
-          <div class="cert-row">
-            <span class="cert-chip"><span class="yr">2022</span>무인멀티콥터 1종</span>
-            <span class="cert-chip"><span class="yr">2023</span>드론촬영조종 2급</span>
-            <span class="cert-chip"><span class="yr">2023</span>드론지도사 2급</span>
-            <span class="cert-chip"><span class="yr">2025</span>무인멀티콥터 지도조종자</span>
-            <span class="cert-chip"><span class="yr">2025</span>무인멀티콥터 실기평가 지도조종자</span>
+        <p>Project Bee는 무인멀티콥터 지도조종자 자격을 보유한 대표가 기체 개발부터 커리큘럼 설계, 현장 강의까지 직접 담당합니다. 기술과 교육 현장을 모두 이해하는 팀이라는 점이 Project Bee의 가장 큰 신뢰 기반입니다.</p>
+        <div class="cert-label">보유 자격증</div>
+        <div class="cert-row">
+          <span class="cert-chip"><span class="yr">2022</span>무인멀티콥터 1종</span>
+          <span class="cert-chip"><span class="yr">2023</span>드론촬영조종 2급</span>
+          <span class="cert-chip"><span class="yr">2023</span>드론지도사 2급</span>
+          <span class="cert-chip"><span class="yr">2025</span>무인멀티콥터 지도조종자</span>
+          <span class="cert-chip"><span class="yr">2025</span>무인멀티콥터 실기평가 지도조종자</span>
           </div>
         </div>
       </div>
-    </div>
   </div>
 </section>
 
